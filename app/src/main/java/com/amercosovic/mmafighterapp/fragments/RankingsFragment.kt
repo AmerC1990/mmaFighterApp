@@ -28,69 +28,81 @@ class RankingsFragment : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
+        Log.d("amer","Fragment onAttach")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d("amer","Fragment onCreate")
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        Log.d("amer","Fragment onCreateView")
         // Inflate the layout for this fragment
-        val retrofit = Retrofit.Builder()
-            .baseUrl("https://api.sportradar.us")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-
-        val api = retrofit.create(ApiInterface::class.java)
-
-        suspend fun getRankings() {
-            val results = api.getRankings("rfv7h9ntruudcnm59vhg4x5h")
-            Log.d("amer", "$results")
-            withContext(Main) {
-                textView.text = results.toString()
-                textView.movementMethod
-
-            }
-        }
-        CoroutineScope(IO).launch {
-            getRankings()
-        }
+        //        val retrofit = Retrofit.Builder()
+//            .baseUrl("https://jsonplaceholder.typicode.com")
+//            .addConverterFactory(GsonConverterFactory.create())
+//            .build()
+//        val api = retrofit.create(ApiInterface::class.java)
+//
+//        suspend fun getRankings() {
+//            val results = api.getRankings("rfv7h9ntruudcnm59vhg4x5h")
+//            Log.d("amer", "$results")
+//            withContext(Dispatchers.Main) {
+////            Toast.makeText(this@MainActivity, "API CALL IS SUCCESSFUL", Toast.LENGTH_LONG).show()
+//                recyclerView.apply {
+//                    layoutManager = LinearLayoutManager(this@RankingsFragment.context)
+//                    adapter = RankingsAdapter(listOf(results))
+//                }
+//            }
+//        }
+//
+//        CoroutineScope(IO).launch {
+//            getRankings()
+//        }
         return inflater.inflate(R.layout.fragment_rankings, container, false)
-
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
+        Log.d("amer","Fragment onActivityCreated")
         super.onActivityCreated(savedInstanceState)
     }
 
     override fun onStart() {
+        Log.d("amer","Fragment onStart")
         super.onStart()
     }
 
     override fun onResume() {
+        Log.d("amer","Fragment onResume")
         super.onResume()
     }
 
     override fun onPause() {
+        Log.d("amer","Fragment onPause")
         super.onPause()
     }
 
     override fun onStop() {
+        Log.d("amer","Fragment onStop")
         super.onStop()
     }
 
     override fun onDestroyView() {
+        Log.d("amer","Fragment onDestroyView")
         super.onDestroyView()
     }
 
     override fun onDestroy() {
+        Log.d("amer","Fragment onDestroy")
         super.onDestroy()
     }
 
     override fun onDetach() {
+        Log.d("amer","Fragment onDetach")
         super.onDetach()
     }
 

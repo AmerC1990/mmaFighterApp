@@ -17,30 +17,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-//        val retrofit = Retrofit.Builder()
-//            .baseUrl("https://api.sportradar.us")
-//            .addConverterFactory(GsonConverterFactory.create())
-//            .build()
-//
-//        val api = retrofit.create(ApiInterface::class.java)
-//
-//        suspend fun getRankings() {
-//            val results = api.getRankings("rfv7h9ntruudcnm59vhg4x5h")
-//            Log.d("amer", "$results")
-//            withContext(Dispatchers.Main) {
-////            Toast.makeText(this@MainActivity, "API CALL IS SUCCESSFUL", Toast.LENGTH_LONG).show()
-//
-//                recyclerView.apply {
-//                    layoutManager = LinearLayoutManager(this@RankingsFragment.context)
-//                    adapter = RankingsAdapter(listOf(results))
-//                }
-//            }
-//        }
-//
-//        CoroutineScope(IO).launch {
-//            getRankings()
-//        }
+        Log.d("amer","Activity onCreate")
 
         rankings_button.setOnClickListener {
             supportFragmentManager.beginTransaction()
@@ -56,6 +33,31 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_TEXT, "mail body")
             startActivity(Intent.createChooser(intent, ""))
         }
-        }
-
     }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d("amer","Activity onStart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("amer","Activity onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("amer","Activity onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("amer","Activity onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("amer","Activity onDestroy")
+    }
+
+}
