@@ -1,8 +1,9 @@
 package com.amercosovic.mmafighterapp.model
 
+
 import com.google.gson.annotations.SerializedName
 
-data class Competitor(
+data class CompetitorX(
     @SerializedName("abbreviation")
     val abbreviation: String,
     @SerializedName("id")

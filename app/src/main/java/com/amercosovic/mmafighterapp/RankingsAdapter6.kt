@@ -11,15 +11,20 @@ import com.amercosovic.mmafighterapp.model.Competitor
 import com.amercosovic.mmafighterapp.model.CompetitorRanking
 import com.amercosovic.mmafighterapp.model.Ranking
 import com.google.gson.Gson
+import kotlinx.android.synthetic.main.featherweight_rankings_row.view.*
 import kotlinx.android.synthetic.main.heavyweight_rankings_row.view.*
+import kotlinx.android.synthetic.main.lightheavyweight_rankings_row.view.*
+import kotlinx.android.synthetic.main.lightweight_rankings_row.view.*
+import kotlinx.android.synthetic.main.middleweight_rankings_row.view.*
+import kotlinx.android.synthetic.main.welterweight_rankings_row.view.*
 import org.json.JSONArray
 import org.json.JSONObject
 
 
-class RankingsAdapter(private val ranking: List<Ranking>) : RecyclerView.Adapter<RankingsAdapter.ViewHolder>(){
+class RankingsAdapter6(private val ranking: List<Ranking>) : RecyclerView.Adapter<RankingsAdapter6.ViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.heavyweight_rankings_row,parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.featherweight_rankings_row ,parent, false)
         return ViewHolder(view)
     }
     override fun getItemCount() = ranking.size
@@ -38,58 +43,58 @@ class RankingsAdapter(private val ranking: List<Ranking>) : RecyclerView.Adapter
 
 //        holder.fighterRanking.text = rankingData.competitorRankings[0].competitor.name
 //        holder.fighterRanking.text = rankingData.competitorRankings[0].rank.toString()
-        holder.heavyweightRanking0.text = rankingData.competitorRankings[0].rank.toString() + " - "+
+        holder.featherweightRanking0.text = rankingData.competitorRankings[0].rank.toString() + " - "+
                 rankingData.competitorRankings[0].competitor.name
 
 
         if (rankingData.competitorRankings[0].rank == 0) {
-            holder.heavyweightRanking0.text = "C" + " - "+
+            holder.featherweightRanking0.text = "C" + " - "+
                     rankingData.competitorRankings[0].competitor.name.substringAfter(',') + " " +
                     rankingData.competitorRankings[0].competitor.name.substringBefore(",")
         } else if (rankingData.competitorRankings[0].rank == 1) {
-            holder.heavyweightRanking0.text = "#" + rankingData.competitorRankings[0].rank.toString() + " - "+
+            holder.featherweightRanking0.text = "#" + rankingData.competitorRankings[0].rank.toString() + " - "+
                     rankingData.competitorRankings[0].competitor.name.substringAfter(',') + " " +
                     rankingData.competitorRankings[0].competitor.name.substringBefore(",")
         }
 
-        holder.heavyweightRanking1.text = "#" + rankingData.competitorRankings[1].rank.toString() + " - "+
+        holder.featherweightRanking1.text = "#" + rankingData.competitorRankings[1].rank.toString() + " - "+
                 rankingData.competitorRankings[1].competitor.name.substringAfter(',') + " " +
                 rankingData.competitorRankings[1].competitor.name.substringBefore(",")
 
 
-        holder.heavyweightRanking2.text = "#" + rankingData.competitorRankings[2].rank.toString() + " - "+
+        holder.featherweightRanking2.text = "#" + rankingData.competitorRankings[2].rank.toString() + " - "+
                 rankingData.competitorRankings[2].competitor.name.substringAfter(',') + " " +
                 rankingData.competitorRankings[2].competitor.name.substringBefore(",")
 
-        holder.heavyweightRanking3.text = "#" + rankingData.competitorRankings[3].rank.toString() + " - "+
+        holder.featherweightRanking3.text = "#" + rankingData.competitorRankings[3].rank.toString() + " - "+
                 rankingData.competitorRankings[3].competitor.name.substringAfter(',') + " " +
                 rankingData.competitorRankings[3].competitor.name.substringBefore(",")
 
-        holder.heavyweightRanking4.text = "#" + rankingData.competitorRankings[4].rank.toString() + " - "+
+        holder.featherweightRanking4.text = "#" + rankingData.competitorRankings[4].rank.toString() + " - "+
                 rankingData.competitorRankings[4].competitor.name.substringAfter(',') + " " +
                 rankingData.competitorRankings[4].competitor.name.substringBefore(",")
 
-        holder.heavyweightRanking5.text = "#" + rankingData.competitorRankings[5].rank.toString() + " - "+
+        holder.featherweightRanking5.text = "#" + rankingData.competitorRankings[5].rank.toString() + " - "+
                 rankingData.competitorRankings[5].competitor.name.substringAfter(',') + " " +
                 rankingData.competitorRankings[5].competitor.name.substringBefore(",")
 
-        holder.heavyweightRanking6.text = "#" + rankingData.competitorRankings[6].rank.toString() + " - "+
+        holder.featherweightRanking6.text = "#" + rankingData.competitorRankings[6].rank.toString() + " - "+
                 rankingData.competitorRankings[6].competitor.name.substringAfter(',') + " " +
                 rankingData.competitorRankings[6].competitor.name.substringBefore(",")
 
-        holder.heavyweightRanking7.text = "#" + rankingData.competitorRankings[7].rank.toString() + " - "+
+        holder.featherweightRanking7.text = "#" + rankingData.competitorRankings[7].rank.toString() + " - "+
                 rankingData.competitorRankings[7].competitor.name.substringAfter(',') + " " +
                 rankingData.competitorRankings[7].competitor.name.substringBefore(",")
 
-        holder.heavyweightRanking8.text = "#" + rankingData.competitorRankings[8].rank.toString() + " - "+
+        holder.featherweightRanking8.text = "#" + rankingData.competitorRankings[8].rank.toString() + " - "+
                 rankingData.competitorRankings[8].competitor.name.substringAfter(',') + " " +
                 rankingData.competitorRankings[8].competitor.name.substringBefore(",")
 
-        holder.heavyweightRanking9.text = "#" + rankingData.competitorRankings[9].rank.toString() + " - "+
+        holder.featherweightRanking9.text = "#" + rankingData.competitorRankings[9].rank.toString() + " - "+
                 rankingData.competitorRankings[9].competitor.name.substringAfter(',') + " " +
                 rankingData.competitorRankings[9].competitor.name.substringBefore(",")
 
-        holder.heavyweightRanking10.text = "#" + rankingData.competitorRankings[10].rank.toString() + " - "+
+        holder.featherweightRanking10.text = "#" + rankingData.competitorRankings[10].rank.toString() + " - "+
                 rankingData.competitorRankings[10].competitor.name.substringAfter(',') + " " +
                 rankingData.competitorRankings[10].competitor.name.substringBefore(",")
 
@@ -114,17 +119,17 @@ class RankingsAdapter(private val ranking: List<Ranking>) : RecyclerView.Adapter
     }
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
 
-        val heavyweightRanking0: TextView = itemView.heavyweight_ranking_0
-        val heavyweightRanking1: TextView = itemView.heavyweight_ranking_1
-        val heavyweightRanking2: TextView = itemView.heavyweight_ranking_2
-        val heavyweightRanking3: TextView = itemView.heavyweight_ranking_3
-        val heavyweightRanking4: TextView = itemView.heavyweight_ranking_4
-        val heavyweightRanking5: TextView = itemView.heavyweight_ranking_5
-        val heavyweightRanking6: TextView = itemView.heavyweight_ranking_6
-        val heavyweightRanking7: TextView = itemView.heavyweight_ranking_7
-        val heavyweightRanking8: TextView = itemView.heavyweight_ranking_8
-        val heavyweightRanking9: TextView = itemView.heavyweight_ranking_9
-        val heavyweightRanking10: TextView = itemView.heavyweight_ranking_10
+        val featherweightRanking0: TextView = itemView.featherweight_ranking_0
+        val featherweightRanking1: TextView = itemView.featherweight_ranking_1
+        val featherweightRanking2: TextView = itemView.featherweight_ranking_2
+        val featherweightRanking3: TextView = itemView.featherweight_ranking_3
+        val featherweightRanking4: TextView = itemView.featherweight_ranking_4
+        val featherweightRanking5: TextView = itemView.featherweight_ranking_5
+        val featherweightRanking6: TextView = itemView.featherweight_ranking_6
+        val featherweightRanking7: TextView = itemView.featherweight_ranking_7
+        val featherweightRanking8: TextView = itemView.featherweight_ranking_8
+        val featherweightRanking9: TextView = itemView.featherweight_ranking_9
+        val featherweightRanking10: TextView = itemView.featherweight_ranking_10
 //        val heavyweightRanking11: TextView = itemView.heavyweight_ranking_11
 //        val heavyweightRanking12: TextView = itemView.heavyweight_ranking_12
 //        val heavyweightRanking13: TextView = itemView.heavyweight_ranking_13

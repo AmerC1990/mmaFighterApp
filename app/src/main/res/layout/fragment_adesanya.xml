@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AdesanyaFragment"
+    android:background="@color/MyBlack">
+
+    <ProgressBar
+
+        android:id="@+id/pBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/MyRed"
+        android:backgroundTint="#000000"
+        android:duplicateParentState="false"
+        android:fadeScrollbars="true"
+        android:focusableInTouchMode="false"
+        android:indeterminate="true"
+        android:indeterminateTint="#198708"
+        android:paddingLeft="25dp"
+        android:paddingTop="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="25dp"
+        android:progressTint="#077808"
+        android:secondaryProgressTint="#B30E0E"
+        android:soundEffectsEnabled="true" />
+
+    <TextView
+    android:layout_width="390dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:background="@color/MyBlack"
+    android:fontFamily="@font/faster_one"
+    android:paddingTop="5dp"
+    android:text="Loading Fighter Profile..."
+    android:textAlignment="center"
+    android:textColor="@color/colorPrimary"
+    android:textSize="33sp"
+    android:textStyle="bold|italic"
+    app:layout_constraintBottom_toTopOf="@+id/frame_layout"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/adesanyaRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</FrameLayout>

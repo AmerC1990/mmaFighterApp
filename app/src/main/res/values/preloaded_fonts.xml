@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/aclonica2</item>
+        <item>@font/allan</item>
+        <item>@font/almendra_bold</item>
+        <item>@font/amarante</item>
+        <item>@font/amarante2</item>
+        <item>@font/anton</item>
+        <item>@font/anton2</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/bigshot_one</item>
+        <item>@font/contrail_one</item>
+        <item>@font/faster_one</item>
+        <item>@font/holtwood_one_sc</item>
+        <item>@font/medievalsharp</item>
+    </array>
+</resources>

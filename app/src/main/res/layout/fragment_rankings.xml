@@ -1,26 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@color/MyBlack"
+    tools:context=".MainActivity"
+    android:id="@+id/fragment_rankings">
 
-    <ScrollView
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:src="@drawable/ufcwallpaper"
+        android:textColor="@color/MyBlack"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        tools:layout_editor_absoluteY="0dp" />
 
-        <TextView
-            android:textColor="@color/MyBlack"
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-    </ScrollView>
+    <Button
+        android:foreground="@drawable/rippleeffect2"
+        android:textSize="30sp"
+        android:id="@+id/flyweight_button"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/buttonshapetwo"
+        android:fontFamily="@font/amarante2"
+        android:textStyle="bold"
+        android:text="Flyweight"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/bantamweight_button" />
+
+    <Button
+        android:foreground="@drawable/rippleeffect2"
+        android:textStyle="bold"
+        android:id="@+id/bantamweight_button"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/buttonshapetwo"
+        android:fontFamily="@font/amarante2"
+        android:text="Bantanweight"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/flyweight_button"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/featherweight_button" />
+
+    <Button
+        android:foreground="@drawable/rippleeffect2"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/featherweight_button"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/buttonshapetwo"
+        android:fontFamily="@font/amarante2"
+        android:text="Featherweight"
+        app:layout_constraintBottom_toTopOf="@+id/bantamweight_button"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/lightweight_button" />
+
+    <Button
+        android:foreground="@drawable/rippleeffect2"
+        android:textStyle="bold"
+        android:id="@+id/lightweight_button"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/buttonshapetwo"
+        android:fontFamily="@font/amarante2"
+        android:text="Lightweight"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/featherweight_button"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/welterweight_button" />
+
+    <Button
+        android:foreground="@drawable/rippleeffect2"
+        android:textStyle="bold"
+        android:id="@+id/welterweight_button"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/buttonshapetwo"
+        android:fontFamily="@font/amarante2"
+        android:text="Welterweight"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/lightweight_button"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/middleweight_button" />
+
+    <Button
+        android:foreground="@drawable/rippleeffect2"
+        android:textStyle="bold"
+        android:id="@+id/middleweight_button"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/buttonshapetwo"
+        android:fontFamily="@font/amarante2"
+        android:text="Middleweight"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/welterweight_button"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/light_heavyweight_button" />
+
+    <Button
+        android:foreground="@drawable/rippleeffect2"
+        android:textStyle="bold"
+        android:id="@+id/light_heavyweight_button"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/buttonshapetwo"
+        android:fontFamily="@font/amarante2"
+        android:text="Light Heavyweight"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/middleweight_button"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/heavyweight_button" />
+
+    <Button
+        android:foreground="@drawable/rippleeffect2"
+        android:theme="@android:style/ThemeOverlay.Material.Dark"
+        android:textStyle="bold"
+        android:id="@+id/heavyweight_button"
+        android:layout_width="309dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/buttonshapetwo"
+        android:fontFamily="@font/amarante2"
+        android:text="Heavyweight"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/light_heavyweight_button"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
 
     <!--    <androidx.recyclerview.widget.RecyclerView-->
     <!--        android:id="@+id/recyclerView"-->

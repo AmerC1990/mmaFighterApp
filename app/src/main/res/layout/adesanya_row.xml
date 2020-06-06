@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/izzy4th">
+
+    <TextView
+        android:id="@+id/izzy_fightingoutof"
+        android:layout_width="277dp"
+        android:layout_height="105dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
+
+    <TextView
+        android:id="@+id/izzy_birthdate"
+        android:layout_width="274dp"
+        android:layout_height="83dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <TextView
+        android:id="@+id/izzy_cityandcountry"
+        android:layout_width="274dp"
+        android:layout_height="83dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601" />
+
+    <TextView
+        android:id="@+id/izzy_hwr"
+        android:layout_width="270dp"
+        android:layout_height="98dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <TextView
+        android:id="@+id/izzy_nickname"
+        android:layout_width="356dp"
+        android:layout_height="106dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+</androidx.constraintlayout.widget.ConstraintLayout>

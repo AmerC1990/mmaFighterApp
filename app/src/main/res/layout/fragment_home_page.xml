@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_page_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MyBlack"
+    tools:context=".fragments.HomePageFragment">
+
+    <ImageView
+        android:id="@+id/CoverImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/mediummmapic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/app_title_textview"
+        android:layout_width="174dp"
+        android:layout_height="66dp"
+        android:fontFamily="@font/anton"
+        android:gravity="top"
+        android:text="MMA KING"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:background="@color/MyGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintStart_toEndOf="@+id/app_title_textview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/contact_developer_textview"
+        android:layout_width="198dp"
+        android:layout_height="41dp"
+        android:autoLink="email"
+        android:fontFamily="@font/anton2"
+        android:foreground="@drawable/rippleeffect3"
+        android:gravity="center"
+        android:text="Contact Developer"
+        android:textAlignment="gravity"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/CoverImage"
+        app:layout_constraintEnd_toStartOf="@+id/CoverImage"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toEndOf="@+id/CoverImage"
+        app:layout_constraintTop_toBottomOf="@+id/CoverImage"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <Button
+        android:id="@+id/fighters_button"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/bigshot_one"
+        android:foreground="@drawable/rippleeffect"
+        android:shadowColor="@color/MyOffWhite"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="Fighters"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/MyBlack"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CoverImage" />
+
+    <Button
+        android:id="@+id/events_button"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/bigshot_one"
+        android:foreground="@drawable/rippleeffect"
+        android:shadowColor="@color/MyOffWhite"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="Events"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/MyBlack"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/CoverImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fighters_button"
+        app:layout_constraintVertical_bias="0.281" />
+
+    <Button
+        android:id="@+id/breakdowns_button"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:background="@drawable/buttonshape"
+        android:fontFamily="@font/bigshot_one"
+        android:foreground="@drawable/rippleeffect"
+        android:shadowColor="@color/MyOffWhite"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="Breakdowns"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/MyBlack"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/CoverImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/events_button"
+        app:layout_constraintVertical_bias="0.445" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

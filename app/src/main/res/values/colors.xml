@@ -4,8 +4,13 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="MyGrey">#525253</color>
-    <color name="MyRed">#9B0909</color>
+    <color name="MyGrey">#414142</color>
+    <color name="MyRed">#E80101</color>
     <color name="MyBlue">#2196F3</color>
     <color name="MyBlack">#000000</color>
+    <color name = "heavyweightText">#191C40</color>
+    <color name = "MyGold">#A5A50F</color>
+    <color name = "MyOffWhite">#B6B6B8</color>
+    <color name="MyYellow">#DCF414</color>
+    <color name="MyOrange">#E6640C</color>
 </resources>
